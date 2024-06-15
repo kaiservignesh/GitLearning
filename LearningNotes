@@ -1,1 +1,104 @@
 Git Learning
+
+## git config command 
+git config --global user.name "name"
+git config --global user.email "email"
+
+git init
+
+git add FILENAME
+# git add --all
+# git add -A
+# git add .
+
+git commit -m "First commit"
+
+## To get details
+git log
+#git log --oneline
+
+## To get the status
+git status
+
+git restore README.md
+# git restore .
+# git checkout .
+
+## git ignore
+create file .gitignore file and folder and file extension to ignored
+
+
+## Global ignore file
+git config --global core.excludesfile [file]
+
+
+## clearing the cache
+git rm -r --cached .
+
+
+## Delete the file
+git rm filename
+
+## Rename the file
+git mv oldfilename newfilename
+
+## Show the differences between file changes 
+git diff
+
+## Amending
+git commit --amend
+# git commit --amend -m 'New commit message'
+# git commit --amend --no-edit
+
+## undo the changes
+git reset commitid
+
+## hard commit to remove latest versions after the specific restore
+git reset --hard commitid
+
+
+## Rebasing
+git rebase <branch>/<commit>
+# git rebase --interactive <branch>/<commit>
+# git rebase -i HEAD~#
+# git rebase -i --root
+
+## Branches
+git branch
+
+## Coping a branch
+git switch -c NAME
+
+## Merging
+git merge <branch>
+
+## Deleting a branch
+git branch --delete NAME
+# git branch -d NAME
+# git branch -D NAME
+
+
+## To go back to main branch
+git checkout main
+
+## Stashing code
+git stash
+# git stash list
+# git stash apply
+# git stash pop
+
+## Git clean
+git clean -n # dry run
+git clean -d # directories
+git clean -f # force
+
+
+ 
+
+
+
+
+
+
+
+
